@@ -27,10 +27,10 @@ public class QuestionUtil {
         }
         //对list按照id进行排序
         numberList.sort(Comparator.comparing(Number::getNId));
-        operatorList.sort(Comparator.comparing(Operator::getOid));
         StringBuilder result = new StringBuilder();
         for (Number number: numberList) {
             StringBuilder s = new StringBuilder(number.getOutput());
+            //添加括号
             for (Parentheses p: parenthesesList) {
                 //如果有前括号
                 if (p.getStartNId() == number.getNId()) {
@@ -40,10 +40,19 @@ public class QuestionUtil {
                 }
             }
             if (number.getNId() <= operatorList.size()) {
-                s.append(" ").append(operatorList.get(number.getNId() - 1).getOperator()).append(" ");
+                s.append(" ").append(findCharById(operatorList, number.getNId()).getOperator()).append(" ");
             }
             result = result.append(s);
         }
         return result.toString();
+    }
+
+    public static <T extends Char> T findCharById(List<T> charList, int id) {
+        for (T c: charList) {
+            if (c.getId() == id) {
+                return c;
+            }
+        }
+        throw new RuntimeException("list超出范围！，list=" + charList + ", id=" + id);
     }
 }

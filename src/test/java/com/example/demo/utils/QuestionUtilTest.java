@@ -21,7 +21,7 @@ public class QuestionUtilTest {
         Number n3 = new Number(3, NumberTypeEnum.FRACTION.getCode(), 2, 5, 8);
         Operator o1 = new Operator(1, OperatorEnum.PLUS.getOperator());
         Operator o2 = new Operator(2, OperatorEnum.DIVISION.getOperator());
-        Parentheses p = new Parentheses(2, 3);
+        Parentheses p = new Parentheses(1, 2, 3);
         charList.add(n1);
         charList.add(n2);
         charList.add(n3);
@@ -32,5 +32,16 @@ public class QuestionUtilTest {
         String result = QuestionUtil.questionsToString(question);
         Assert.assertNotNull(result);
         System.out.println(result);
+    }
+
+    @Test
+    public void findCharById() {
+        List<Char> charList = new ArrayList<>();
+        Number n1 = new Number(1, NumberTypeEnum.NATURAL_NUMBER.getCode(), 7);
+        Number n2 = new Number(2, NumberTypeEnum.NATURAL_NUMBER.getCode(), 2);
+        charList.add(n1);
+        charList.add(n2);
+        Char result = QuestionUtil.findCharById(charList, 2);
+        Assert.assertEquals(2, result.getId());
     }
 }

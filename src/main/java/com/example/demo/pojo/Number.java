@@ -49,4 +49,9 @@ public class Number implements Char{
         this.numerator = numerator;
         this.denominator = denominator;
     }
+
+    @Override
+    public int getId() {
+        return nId;
+    }
 }

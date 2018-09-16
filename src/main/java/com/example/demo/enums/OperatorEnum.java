@@ -1,8 +1,10 @@
 package com.example.demo.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public enum OperatorEnum {
 
     PLUS(0, "+"),
@@ -14,9 +16,4 @@ public enum OperatorEnum {
     private int code;
 
     private String operator;
-
-    OperatorEnum(int code, String operator) {
-        this.code = code;
-        this.operator = operator;
-    }
 }

@@ -1,8 +1,10 @@
 package com.example.demo.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public enum NumberTypeEnum {
 
     NATURAL_NUMBER(0, "自然数"),
@@ -12,9 +14,4 @@ public enum NumberTypeEnum {
     private Integer code;
 
     private String message;
-
-    NumberTypeEnum(Integer code, String message) {
-        this.code = code;
-        this.message = message;
-    }
 }
