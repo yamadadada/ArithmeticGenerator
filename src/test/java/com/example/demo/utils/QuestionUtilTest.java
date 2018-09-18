@@ -14,7 +14,6 @@ public class QuestionUtilTest {
 
     @Test
     public void questionsToString() {
-        Question question = new Question();
         List<Char> charList = new ArrayList<>();
         Number n1 = new Number(1, NumberTypeEnum.NATURAL_NUMBER.getCode(), 5);
         Number n2 = new Number(2, NumberTypeEnum.NATURAL_NUMBER.getCode(), 7);
@@ -28,8 +27,7 @@ public class QuestionUtilTest {
         charList.add(o1);
         charList.add(o2);
         charList.add(p);
-        question.setCharList(charList);
-        String result = QuestionUtil.questionsToString(question);
+        String result = QuestionUtil.questionsToString(charList);
         Assert.assertNotNull(result);
         System.out.println(result);
     }

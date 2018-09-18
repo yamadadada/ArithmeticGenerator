@@ -10,11 +10,11 @@ import java.util.List;
 public class QuestionUtil {
 
     //按照String类型输出算术式
-    public static String questionsToString(Question question) {
+    public static String questionsToString(List<Char> charList) {
         List<Number> numberList = new ArrayList<>();
         List<Operator> operatorList = new ArrayList<>();
         List<Parentheses> parenthesesList = new ArrayList<>();
-        for (Char c : question.getCharList()) {
+        for (Char c : charList) {
             if (c.getClass().equals(Number.class)) {
                 numberList.add((Number) c);
             }

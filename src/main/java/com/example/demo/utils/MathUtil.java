@@ -1,4 +1,4 @@
 package com.example.demo.utils;
 
-public class MathUtils {
+public class MathUtil {
 }

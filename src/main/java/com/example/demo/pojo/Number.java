@@ -4,7 +4,7 @@ import com.example.demo.enums.NumberTypeEnum;
 import lombok.Data;
 
 /**
- * 自然数
+ * 自然数或分数
  */
 @Data
 public class Number implements Char{

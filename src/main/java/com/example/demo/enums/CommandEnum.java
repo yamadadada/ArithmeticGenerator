@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum CommandEnum {
 
-    N("-n", "成题目的个数"),
+    N("-n", "生成题目的个数"),
     R("-r", "题目中数值的最大值"),
     ;
 

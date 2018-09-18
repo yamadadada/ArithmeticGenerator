@@ -3,7 +3,10 @@ package com.example.demo;
 import com.example.demo.enums.CommandEnum;
 import com.example.demo.pojo.Question;
 import com.example.demo.service.QuestionService;
+import com.example.demo.service.RepeatService;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 /**
@@ -17,12 +20,17 @@ public class App {
     //自然数、真分数和真分数分母允许的最大值
     private static int maxRange;
 
-    private static QuestionService questionService = new QuestionService();
-
     public static void main(String[] args) {
         commandParser(args);
+        QuestionService questionService = new QuestionService();
+        RepeatService repeatService = new RepeatService();
+        List<Question> questionList = new ArrayList<>();
         for (int i = 1; i <= questionNumber; i++) {
             Question question = questionService.getQuestion(maxRange);
+            //检查重复题目
+            while (repeatService.isRepeat(questionList, question)) {
+                question = questionService.getQuestion(maxRange);
+            }
             question.setId(i);
         }
     }
