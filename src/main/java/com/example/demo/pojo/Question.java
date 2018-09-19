@@ -17,5 +17,5 @@ public class Question {
     private List<Parentheses> parenthesesList;
 
     //答案
-    private Number result;
+    private String result;
 }

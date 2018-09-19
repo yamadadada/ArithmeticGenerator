@@ -91,6 +91,11 @@ public class QuestionUtil {
                 return false;
             }
         }
+        for (T t2: list2) {
+            if (!list1.contains(t2)) {
+                return false;
+            }
+        }
         return true;
     }
 
