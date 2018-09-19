@@ -6,6 +6,7 @@ import com.example.demo.service.QuestionService;
 import com.example.demo.service.RepeatService;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -24,7 +25,7 @@ public class App {
         commandParser(args);
         QuestionService questionService = new QuestionService();
         RepeatService repeatService = new RepeatService();
-        List<Question> questionList = new ArrayList<>();
+        List<Question> questionList = new LinkedList<>();
         for (int i = 1; i <= questionNumber; i++) {
             Question question = questionService.getQuestion(maxRange);
             //检查重复题目
@@ -32,6 +33,7 @@ public class App {
                 question = questionService.getQuestion(maxRange);
             }
             question.setId(i);
+            questionList.add(question);
         }
     }
 

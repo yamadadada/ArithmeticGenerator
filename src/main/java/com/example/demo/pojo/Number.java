@@ -36,10 +36,16 @@ public class Number implements Char{
         }
     }
 
+    public CalculateFraction getCalculate() {
+        return new CalculateFraction(number * denominator + numerator, denominator);
+    }
+
     public Number(int nId, int numberType, int number) {
         this.nId = nId;
         this.numberType = numberType;
         this.number = number;
+        this.numerator = 0;
+        this.denominator = 1;
     }
 
     public Number(int nId, int numberType, int number, int numerator, int denominator) {

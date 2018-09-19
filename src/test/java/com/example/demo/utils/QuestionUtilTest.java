@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class QuestionUtilTest {
@@ -27,7 +28,7 @@ public class QuestionUtilTest {
         charList.add(o1);
         charList.add(o2);
         charList.add(p);
-        String result = QuestionUtil.questionsToString(charList);
+        String result = QuestionUtil.charListToString(charList);
         Assert.assertNotNull(result);
         System.out.println(result);
     }
@@ -41,5 +42,12 @@ public class QuestionUtilTest {
         charList.add(n2);
         Char result = QuestionUtil.findCharById(charList, 2);
         Assert.assertEquals(2, result.getId());
+    }
+
+    @Test
+    public void isListEqual() {
+        List<Integer> list1 = Arrays.asList(1, 2, 3, 4);
+        List<Integer> list2 = Arrays.asList(4, 2, 3, 1);
+        Assert.assertEquals(true, QuestionUtil.isListEqual(list1, list2));
     }
 }
