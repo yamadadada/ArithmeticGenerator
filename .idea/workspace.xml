@@ -2,18 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd3d6383-0a75-4885-babb-66557bae423a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/utils/MathUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/service/QuestionServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/CalculateFraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/CalculateFraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Parentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Parentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/utils/MathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/utils/MathUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/service/RepeatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/service/RepeatServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/CalculateFraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/CalculateFraction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/utils/QuestionUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/utils/QuestionUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/Operator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/Operator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/Parentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/Parentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/QuestionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/RepeatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/RepeatService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/utils/MathUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/utils/MathUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/utils/QuestionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/utils/QuestionUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/AppTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/service/RepeatServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/service/RepeatServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/utils/QuestionUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/utils/QuestionUtilTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,22 +39,22 @@
       <file leaf-file-name="MathUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/utils/MathUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="215">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1742#1743#0" expanded="true" />
-                <element signature="e#1782#1783#0" expanded="true" />
+                <element signature="e#2489#2490#0" expanded="true" />
+                <element signature="e#2529#2530#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepeatService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java">
+      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+            <state relative-caret-position="44">
+              <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,23 +62,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RepeatServiceTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/service/RepeatServiceTest.java">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285">
-              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="120">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Number.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Number.java">
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -96,24 +106,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Char.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/enums/OperatorEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/enums/NumberTypeEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Parentheses.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/exception/UserException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/enums/CommandEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/utils/QuestionUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Fraction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Number.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/CalculateFraction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/utils/MathUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/demo/utils/MathUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Parentheses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/demo/service/RepeatServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/utils/QuestionUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Number.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/demo/service/QuestionServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/utils/MathUtil.java" />
       </list>
     </option>
   </component>
@@ -152,6 +163,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,12 +277,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Program Files/Java/ArithmeticGenerator/src/test/java/com/example/demo/utils/QuestionUtilTest.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -283,8 +295,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.demo.utils" />
       <recent name="com.example.demo.service" />
+      <recent name="com.example.demo.utils" />
       <recent name="com.example.demo" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -303,23 +315,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RepeatServiceTest.isRepeat">
+  <component name="RunManager" selected="JUnit.AppTest.main">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.App" />
+      <module name="ArithmeticGenerator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="MathUtilTest.calculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArithmeticGenerator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.utils.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.example.demo.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.utils.MathUtilTest" />
-      <option name="METHOD_NAME" value="calculate" />
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.AppTest" />
+      <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -330,7 +353,30 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="QuestionUtilTest.isListEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionServiceTest.getQuestion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArithmeticGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.QuestionServiceTest" />
+      <option name="METHOD_NAME" value="getQuestion" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="QuestionUtilTest.questionsToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArithmeticGenerator" />
       <extension name="coverage">
         <pattern>
@@ -342,53 +388,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.demo.utils" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.utils.QuestionUtilTest" />
-      <option name="METHOD_NAME" value="isListEqual" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="RepeatServiceTest.buildLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArithmeticGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.example.demo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.RepeatServiceTest" />
-      <option name="METHOD_NAME" value="buildLink" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="RepeatServiceTest.findPriorityOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArithmeticGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.example.demo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.service.RepeatServiceTest" />
-      <option name="METHOD_NAME" value="findPriorityOperator" />
+      <option name="METHOD_NAME" value="questionsToString" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -461,19 +461,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.QuestionUtilTest.isListEqual" />
-      <item itemvalue="JUnit.RepeatServiceTest.findPriorityOperator" />
-      <item itemvalue="JUnit.RepeatServiceTest.buildLink" />
-      <item itemvalue="JUnit.MathUtilTest.calculate" />
       <item itemvalue="JUnit.RepeatServiceTest.isRepeat" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.AppTest.main" />
+      <item itemvalue="JUnit.QuestionServiceTest.getQuestion" />
+      <item itemvalue="JUnit.QuestionUtilTest.questionsToString" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.main" />
+        <item itemvalue="JUnit.QuestionUtilTest.questionsToString" />
+        <item itemvalue="JUnit.QuestionServiceTest.getQuestion" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.RepeatServiceTest.isRepeat" />
-        <item itemvalue="JUnit.MathUtilTest.calculate" />
-        <item itemvalue="JUnit.RepeatServiceTest.buildLink" />
-        <item itemvalue="JUnit.RepeatServiceTest.findPriorityOperator" />
-        <item itemvalue="JUnit.QuestionUtilTest.isListEqual" />
       </list>
     </recent_temporary>
   </component>
@@ -497,50 +497,61 @@
       <workItem from="1537331492955" duration="734000" />
       <workItem from="1537333787570" duration="3394000" />
       <workItem from="1537364970365" duration="12876000" />
+      <workItem from="1537497738119" duration="12581000" />
+      <workItem from="1537520101545" duration="5224000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MathUtilTest_calculate - 2018.09.20 at 00h 45m 28s.xml">
-      <configuration name="MathUtilTest.calculate" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 14h 11m 11s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathUtilTest_calculate - 2018.09.20 at 00h 45m 41s.xml">
-      <configuration name="MathUtilTest.calculate" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 17h 10m 19s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathUtilTest_calculate - 2018.09.20 at 00h 46m 11s.xml">
-      <configuration name="MathUtilTest.calculate" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 17h 42m 49s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathUtilTest_calculate - 2018.09.20 at 00h 46m 53s.xml">
-      <configuration name="MathUtilTest.calculate" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 17h 48m 19s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathUtilTest_calculate - 2018.09.20 at 00h 47m 44s.xml">
-      <configuration name="MathUtilTest.calculate" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 17h 56m 08s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepeatServiceTest_isRepeat - 2018.09.20 at 01h 24m 32s.xml">
-      <configuration name="RepeatServiceTest.isRepeat" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 18h 09m 22s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepeatServiceTest_isRepeat - 2018.09.20 at 01h 26m 22s.xml">
-      <configuration name="RepeatServiceTest.isRepeat" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 18h 12m 26s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepeatServiceTest_isRepeat - 2018.09.20 at 01h 30m 09s.xml">
-      <configuration name="RepeatServiceTest.isRepeat" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 18h 16m 23s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepeatServiceTest_isRepeat - 2018.09.20 at 01h 30m 44s.xml">
-      <configuration name="RepeatServiceTest.isRepeat" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 18h 22m 11s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepeatServiceTest_isRepeat - 2018.09.20 at 01h 32m 13s.xml">
-      <configuration name="RepeatServiceTest.isRepeat" configurationId="JUnit" />
+    <history-entry file="AppTest_main - 2018.09.21 at 18h 32m 16s.xml">
+      <configuration name="AppTest.main" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69223000" />
+    <option name="totallyTimeSpent" value="87028000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293944" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32791728" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
@@ -548,25 +559,25 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32791728" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293944" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39290988" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25402144" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20978552" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988183" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35302806" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,24 +588,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="55" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="117" selection-start-line="25" selection-start-column="117" selection-end-line="25" selection-end-column="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1767">
-          <caret line="96" column="90" lean-forward="true" selection-start-line="96" selection-start-column="90" selection-end-line="96" selection-end-column="90" />
+        <state relative-caret-position="1596">
+          <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -780,27 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/enums/NumberTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/enums/CommandEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/dao/OutputDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -829,31 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/utils/QuestionUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Char.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Parentheses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -864,34 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/enums/OperatorEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/utils/MathUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -899,59 +830,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/CalculateFraction.java">
+    <entry file="jar://$PROJECT_DIR$/../jdk1.8.0_144/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="217">
+          <caret line="1019" column="18" selection-start-line="1019" selection-start-column="18" selection-end-line="1019" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/enums/CommandEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/enums/NumberTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/enums/OperatorEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="285">
           <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/utils/MathUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Number.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -960,8 +870,110 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/service/RepeatServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="234">
+          <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/service/QuestionServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/utils/QuestionUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/CalculateFraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/utils/MathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
+            <element signature="e#2529#2530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -4,6 +4,7 @@ import com.example.demo.enums.CommandEnum;
 import com.example.demo.pojo.Question;
 import com.example.demo.service.QuestionService;
 import com.example.demo.service.RepeatService;
+import com.example.demo.utils.QuestionUtil;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -29,11 +30,14 @@ public class App {
         for (int i = 1; i <= questionNumber; i++) {
             Question question = questionService.getQuestion(maxRange);
             //检查重复题目
-            while (repeatService.isRepeat(questionList, question)) {
+            while (question == null || repeatService.isRepeat(questionList, question)) {
                 question = questionService.getQuestion(maxRange);
             }
             question.setId(i);
             questionList.add(question);
+        }
+        for (Question q: questionList) {
+            System.out.println(QuestionUtil.charListToString(q.getCharList(), q.getParenthesesList()));
         }
     }
 

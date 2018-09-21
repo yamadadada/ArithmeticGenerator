@@ -1,5 +1,6 @@
 package com.example.demo.utils;
 
+import com.example.demo.enums.NumberTypeEnum;
 import com.example.demo.enums.OperatorEnum;
 import com.example.demo.pojo.CalculateFraction;
 import com.example.demo.pojo.Number;
@@ -17,17 +18,38 @@ public class MathUtil {
             int a1 = cf1.getNumerator() * (lcm / cf1.getDenominator());
             int a2 = cf2.getNumerator() * (lcm / cf2.getDenominator());
             if (o.getOperator().equals(OperatorEnum.PLUS.getOperator())) {
-                return reduction(a1 + a2, lcm).getNumber();
+                Number n = reduction(a1 + a2, lcm).getNumber();
+                n.setNId(o.getOid());
+                return n;
             } else {
-                return reduction(a1 - a2, lcm).getNumber();
+                //如果是负数，返回null
+                if (a1 < a2) {
+                    return null;
+                } else if (a1 == a2) {
+                    return new Number(o.getOid(), NumberTypeEnum.NATURAL_NUMBER.getCode(), 0);
+                }
+                Number n = reduction(a1 - a2, lcm).getNumber();
+                n.setNId(o.getOid());
+                return n;
             }
         }
         //如果是乘法
         if (o.getOperator().equals(OperatorEnum.MULTIPLICATION.getOperator())) {
-            return reduction(cf1.getNumerator() * cf2.getNumerator(), cf1.getDenominator() * cf2.getDenominator()).getNumber();
+            Number n = reduction(cf1.getNumerator() * cf2.getNumerator(), cf1.getDenominator() * cf2.getDenominator()).getNumber();
+            n.setNId(o.getOid());
+            return n;
         }
         //如果是除法
-        return reduction(cf1.getNumerator() * cf2.getDenominator(), cf1.getDenominator() * cf2.getNumerator()).getNumber();
+        if (cf2.getNumerator() == 0) {//如果被除数是0，返回null
+            return null;
+        }
+        if (cf1.getNumerator() == 0) {
+            Number n = new Number(o.getOid(), NumberTypeEnum.NATURAL_NUMBER.getCode(), 0);
+            return n;
+        }
+        Number n = reduction(cf1.getNumerator() * cf2.getDenominator(), cf1.getDenominator() * cf2.getNumerator()).getNumber();
+        n.setNId(o.getOid());
+        return n;
     }
 
     /**

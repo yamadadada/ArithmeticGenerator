@@ -26,7 +26,7 @@ public class RepeatServiceTest {
         Number n3 = new Number(3, NumberTypeEnum.NATURAL_NUMBER.getCode(), 1);
         Operator o1 = new Operator(1, OperatorEnum.PLUS.getOperator());
         Operator o2 = new Operator(2, OperatorEnum.PLUS.getOperator());
-        Parentheses parentheses = new Parentheses(1, 2, 3);
+        Parentheses parentheses = new Parentheses(2, 3);
         List<Parentheses> parenthesesList = new LinkedList<>();
         parenthesesList.add(parentheses);
         charList1.add(n1);
@@ -65,11 +65,11 @@ public class RepeatServiceTest {
         operatorList.add(o2);
         operatorList.add(o3);
         List<Parentheses> parenthesesList = new LinkedList<>();
-        Parentheses p1 = new Parentheses(1, 3, 4);
-        Parentheses p2 = new Parentheses(2, 1, 2);
+        Parentheses p1 = new Parentheses(3, 4);
+        Parentheses p2 = new Parentheses(1, 2);
         parenthesesList.add(p1);
         parenthesesList.add(p2);
-        List<Operator> result = repeatService.buildLink(operatorList, parenthesesList);
+        List<Operator> result = QuestionUtil.buildLink(operatorList, parenthesesList);
         System.out.println(result);
         Assert.assertEquals(3, result.size());
     }

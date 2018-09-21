@@ -1,5 +1,6 @@
 package com.example.demo.utils;
 
+import com.example.demo.enums.OperatorEnum;
 import com.example.demo.pojo.*;
 import com.example.demo.pojo.Number;
 
@@ -12,10 +13,9 @@ public class QuestionUtil {
      * @param charList
      * @return
      */
-    public static String charListToString(List<Char> charList) {
+    public static String charListToString(List<Char> charList, List<Parentheses> parenthesesList) {
         List<Number> numberList = fatherListToSonList(charList, Number.class);
         List<Operator> operatorList = fatherListToSonList(charList, Operator.class);
-        List<Parentheses> parenthesesList = fatherListToSonList(charList, Parentheses.class);
         //对list按照id进行排序
         numberList.sort(Comparator.comparing(Number::getNId));
         StringBuilder result = new StringBuilder();
@@ -114,5 +114,57 @@ public class QuestionUtil {
             }
         }
         return result;
+    }
+
+    /**
+     * 构建运算符优先运算链表
+     * @param operatorList
+     * @param parenthesesList
+     * @return
+     */
+    public static List<Operator> buildLink(List<Operator> operatorList, List<Parentheses> parenthesesList) {
+        if (operatorList.size() == 1) {
+            return operatorList;
+        }
+        List<Operator> originList = operatorList;
+        List<Operator> calculateList = new LinkedList<>();
+        //如果有括号，找到最优先的括号
+        Parentheses priorityParentheses;
+        if (parenthesesList != null && parenthesesList.size() != 0) {
+            priorityParentheses = parenthesesList.get(0);
+            for (int i = 1; i < parenthesesList.size(); i++) {
+                Parentheses p = parenthesesList.get(i);
+                if (p.getEndNId() - p.getStartNId() < priorityParentheses.getEndNId() - priorityParentheses.getStartNId()) {
+                    priorityParentheses = p;
+                } else if (p.getEndNId() - p.getStartNId() == priorityParentheses.getEndNId() - priorityParentheses.getStartNId() && p.getStartNId() < priorityParentheses.getStartNId()) {
+                    priorityParentheses = p;
+                }
+            }
+            parenthesesList.remove(priorityParentheses);
+            int start = priorityParentheses.getStartNId();
+            int end = priorityParentheses.getEndNId() - 1;
+            operatorList = QuestionUtil.findCharById(operatorList, start, end);
+        }
+        List<Operator> tempOs = new LinkedList<>();
+        for (Operator o: operatorList) {
+            if (o.getOperator().equals(OperatorEnum.MULTIPLICATION.getOperator()) || o.getOperator().equals(OperatorEnum.DIVISION.getOperator())) {
+                ((LinkedList<Operator>) calculateList).addLast(o);
+            } else {
+                ((LinkedList<Operator>) tempOs).addLast(o);
+            }
+        }
+        for (Operator o: tempOs) {
+            ((LinkedList<Operator>) calculateList).addLast(o);
+        }
+        //删除已添加到链表的运算符
+        for (Operator o: calculateList) {
+            originList.remove(o);
+        }
+        if (originList.size() == 0) {
+            return calculateList;
+        } else {
+            calculateList.addAll(buildLink(originList, parenthesesList));
+            return calculateList;
+        }
     }
 }

@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class QuestionUtilTest {
@@ -21,14 +22,15 @@ public class QuestionUtilTest {
         Number n3 = new Number(3, NumberTypeEnum.FRACTION.getCode(), 2, 5, 8);
         Operator o1 = new Operator(1, OperatorEnum.PLUS.getOperator());
         Operator o2 = new Operator(2, OperatorEnum.DIVISION.getOperator());
-        Parentheses p = new Parentheses(1, 2, 3);
+        Parentheses p = new Parentheses(2, 3);
+        List<Parentheses> parenthesesList = new LinkedList<>();
         charList.add(n1);
         charList.add(n2);
         charList.add(n3);
         charList.add(o1);
         charList.add(o2);
-        charList.add(p);
-        String result = QuestionUtil.charListToString(charList);
+        parenthesesList.add(p);
+        String result = QuestionUtil.charListToString(charList, parenthesesList);
         Assert.assertNotNull(result);
         System.out.println(result);
     }
