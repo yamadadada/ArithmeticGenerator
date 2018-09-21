@@ -60,7 +60,7 @@ public class QuestionService {
                 if (!flag) {
                     p = new Parentheses();
                     p.setStartNId(i);
-                    if (true) {
+                    if (r.nextBoolean()) {
                         p.setEndNId(i + 1);
                         parenthesesList.add(p);
                         p = null;
@@ -70,9 +70,7 @@ public class QuestionService {
             }
         }
         //构造运算符优先处理链
-        List<Parentheses> tempPList = new LinkedList<>();
-        tempPList.addAll(parenthesesList);
-        List<Operator> buildList = QuestionUtil.buildLink(operatorList, tempPList);
+        List<Operator> buildList = QuestionUtil.buildLink(operatorList, parenthesesList);
         //计算结果
         List<Char> tempList = new LinkedList<>();
         tempList.addAll(charList);

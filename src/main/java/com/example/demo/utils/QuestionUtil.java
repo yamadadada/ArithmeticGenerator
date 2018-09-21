@@ -119,18 +119,23 @@ public class QuestionUtil {
     /**
      * 构建运算符优先运算链表
      * @param operatorList
-     * @param parenthesesList
+     * @param pList
      * @return
      */
-    public static List<Operator> buildLink(List<Operator> operatorList, List<Parentheses> parenthesesList) {
+    public static List<Operator> buildLink(List<Operator> operatorList, List<Parentheses> pList) {
         if (operatorList.size() == 1) {
             return operatorList;
         }
-        List<Operator> originList = operatorList;
+        List<Operator> originList = new ArrayList<>();
+        originList.addAll(operatorList);
+        List<Parentheses> parenthesesList = new ArrayList<>();
+        if (pList != null) {
+            parenthesesList.addAll(pList);
+        }
         List<Operator> calculateList = new LinkedList<>();
         //如果有括号，找到最优先的括号
         Parentheses priorityParentheses;
-        if (parenthesesList != null && parenthesesList.size() != 0) {
+        if (parenthesesList.size() != 0) {
             priorityParentheses = parenthesesList.get(0);
             for (int i = 1; i < parenthesesList.size(); i++) {
                 Parentheses p = parenthesesList.get(i);

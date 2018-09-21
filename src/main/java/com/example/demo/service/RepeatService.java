@@ -38,8 +38,10 @@ public class RepeatService {
                         }
                     }
                     //根据优先链表逐一比较
-                    List<Char> charList1 = origin.getCharList();
-                    List<Char> charList2 = question.getCharList();
+                    List<Char> charList1 = new LinkedList<>();
+                    List<Char> charList2 = new LinkedList<>();
+                    charList1.addAll(origin.getCharList());
+                    charList2.addAll(question.getCharList());
                     List<String> stringList1 = new LinkedList<>();
                     List<String> stringList2 = new LinkedList<>();
                     for (int i = 0; i < o1.size() - 1; i ++) {
@@ -60,7 +62,7 @@ public class RepeatService {
                             charList2.remove(index2 - 1);
                         }
                         charList1.add(index1 - 1, n);
-                        charList2.add(index1 - 1, n);
+                        charList2.add(index2 - 1, n);
                     }
                     return true;
                 }

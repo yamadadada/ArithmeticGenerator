@@ -43,10 +43,6 @@ public class MathUtil {
         if (cf2.getNumerator() == 0) {//如果被除数是0，返回null
             return null;
         }
-        if (cf1.getNumerator() == 0) {
-            Number n = new Number(o.getOid(), NumberTypeEnum.NATURAL_NUMBER.getCode(), 0);
-            return n;
-        }
         Number n = reduction(cf1.getNumerator() * cf2.getDenominator(), cf1.getDenominator() * cf2.getNumerator()).getNumber();
         n.setNId(o.getOid());
         return n;
@@ -59,6 +55,9 @@ public class MathUtil {
      * @return
      */
     public static CalculateFraction reduction(int x, int y) {
+        if (x == 0 || y == 0) {
+            return new CalculateFraction(x, y);
+        }
         //求最大公约数
         int gcd = gcd(x, y);
         return new CalculateFraction(x / gcd, y / gcd);
