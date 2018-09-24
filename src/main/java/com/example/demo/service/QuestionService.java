@@ -38,37 +38,7 @@ public class QuestionService {
         charList.add(createNumber(maxRange, operatorNum + 1));
         //生成括号
         List<Parentheses> parenthesesList = new LinkedList<>();
-        //运算符大于1才生成括号
-        if (operatorList.size() > 1) {
-            Parentheses p = null;
-            for (int i = 1; i <= operatorList.size(); i++) {
-                if (p != null && i == operatorList.size()) {
-                    if (p.getStartNId() == 1) {
-                        break;
-                    }
-                    p.setEndNId(i + 1);
-                    parenthesesList.add(p);
-                    break;
-                }
-                boolean flag = r.nextBoolean();
-                if (flag && p != null) {
-                    p.setEndNId(i + 1);
-                    parenthesesList.add(p);
-                    p = null;
-                    i = i + 1;
-                }
-                if (!flag) {
-                    p = new Parentheses();
-                    p.setStartNId(i);
-                    if (r.nextBoolean()) {
-                        p.setEndNId(i + 1);
-                        parenthesesList.add(p);
-                        p = null;
-                        i = i + 1;
-                    }
-                }
-            }
-        }
+        getParenthesesList(1, operatorList.size() + 1, parenthesesList);
         //构造运算符优先处理链
         List<Operator> buildList = QuestionUtil.buildLink(operatorList, parenthesesList);
         //计算结果
@@ -107,6 +77,43 @@ public class QuestionService {
             Number number = cf.getNumber();
             number.setNId(nid);
             return number;
+        }
+    }
+
+    public void getParenthesesList(int startNid, int endNid, List<Parentheses> parenthesesList) {
+        if (endNid - startNid > 1) {
+            Random r = new Random();
+            Parentheses p = null;
+            for (int i = startNid; i <= endNid - 1; i++) {
+                if (p != null && i == endNid - 1) {
+                    if (p.getStartNId() == startNid) {
+                        break;
+                    }
+                    p.setEndNId(i + 1);
+                    parenthesesList.add(p);
+                    getParenthesesList(p.getStartNId(), p.getEndNId(), parenthesesList);
+                    break;
+                }
+                boolean flag = r.nextBoolean();
+                if (flag && p != null) {
+                    p.setEndNId(i + 1);
+                    parenthesesList.add(p);
+                    getParenthesesList(p.getStartNId(), p.getEndNId(), parenthesesList);
+                    p = null;
+                    i = i + 1;
+                }
+                if (!flag) {
+                    p = new Parentheses();
+                    p.setStartNId(i);
+                    if (r.nextBoolean()) {
+                        p.setEndNId(i + 1);
+                        parenthesesList.add(p);
+                        getParenthesesList(p.getStartNId(), p.getEndNId(), parenthesesList);
+                        p = null;
+                        i = i + 1;
+                    }
+                }
+            }
         }
     }
 }
