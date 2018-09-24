@@ -101,7 +101,7 @@ public class QuestionService {
         Random r = new Random();
         NumberTypeEnum numberTypeEnum = NumberTypeEnum.values()[r.nextInt(2)];
         if (numberTypeEnum.equals(NumberTypeEnum.NATURAL_NUMBER)) {
-            return new Number(nid, NumberTypeEnum.NATURAL_NUMBER.getCode(), r.nextInt(maxRange - 1) + 1);
+            return new Number(nid, NumberTypeEnum.NATURAL_NUMBER.getCode(), r.nextInt(maxRange));
         } else {
             CalculateFraction cf = MathUtil.reduction(r.nextInt(maxRange - 1) + 1, r.nextInt(maxRange - 1) + 1);
             Number number = cf.getNumber();

@@ -6,8 +6,8 @@ public class AppTest {
 
     @Test
     public void main() {
-//        String[] args = {"-n", "10000", "-r", "10"};
-        String[] args = {"-e", "Exercises.txt", "-a", "Answers.txt"};
+        String[] args = {"-n", "10000", "-r", "100"};
+//        String[] args = {"-e", "Exercises.txt", "-a", "Answers.txt"};
         App.main(args);
     }
 

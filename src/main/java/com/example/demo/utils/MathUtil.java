@@ -25,8 +25,6 @@ public class MathUtil {
                 //如果是负数，返回null
                 if (a1 < a2) {
                     return null;
-                } else if (a1 == a2) {
-                    return new Number(o.getOid(), NumberTypeEnum.NATURAL_NUMBER.getCode(), 0);
                 }
                 Number n = reduction(a1 - a2, lcm).getNumber();
                 n.setNId(o.getOid());

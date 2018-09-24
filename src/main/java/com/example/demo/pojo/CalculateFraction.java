@@ -18,7 +18,7 @@ public class CalculateFraction {
     private int denominator;
 
     public Number getNumber() {
-        if (denominator == 1) {
+        if (denominator == 1 || numerator == 0) {
             return new Number(0, NumberTypeEnum.NATURAL_NUMBER.getCode(), numerator);
         }
         if (numerator > denominator) {
