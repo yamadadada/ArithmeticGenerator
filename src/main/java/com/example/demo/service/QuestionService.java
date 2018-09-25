@@ -95,17 +95,12 @@ public class QuestionService {
                     break;
                 }
                 boolean flag = r.nextBoolean();
-                if (flag && p != null) {
-                    p.setEndNId(i + 1);
-                    parenthesesList.add(p);
-                    getParenthesesList(p.getStartNId(), p.getEndNId(), parenthesesList);
-                    p = null;
-                    i = i + 1;
-                }
-                if (!flag) {
-                    p = new Parentheses();
-                    p.setStartNId(i);
-                    if (r.nextBoolean()) {
+                if (p != null || !flag) {
+                    if (!flag) {
+                        p = new Parentheses();
+                        p.setStartNId(i);
+                    }
+                    if (flag || r.nextBoolean()) {
                         p.setEndNId(i + 1);
                         parenthesesList.add(p);
                         getParenthesesList(p.getStartNId(), p.getEndNId(), parenthesesList);
