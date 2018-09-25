@@ -27,12 +27,14 @@ public class OutputDao {
             throw new RuntimeException("文件输出错误！");
         } finally {
             try {
-                bw1.flush();
-                bw2.flush();
-                bw1.close();
-                bw2.close();
+                if (bw1 != null && bw2 != null) {
+                    bw1.flush();
+                    bw2.flush();
+                    bw1.close();
+                    bw2.close();
+                }
             } catch (IOException e) {
-                throw new RuntimeException("输出流关闭错误！");
+                e.printStackTrace();
             }
         }
     }
@@ -50,7 +52,6 @@ public class OutputDao {
             String s1;
             String s2;
             while ((s1 = br1.readLine()) != null) {
-                String[] ssss = s1.split("\\.");
                 String questionNO = s1.split("\\.")[0];
                 if ((s2 = br2.readLine()) != null) {
                     String answer = s1.split(" =")[1].replace(" ", "");
@@ -68,10 +69,12 @@ public class OutputDao {
             throw new RuntimeException();
         } finally {
             try {
-                br1.close();
-                br2.close();
+                if (br1 != null && br2 != null) {
+                    br1.close();
+                    br2.close();
+                }
             } catch (IOException e) {
-                throw new RuntimeException("输入流关闭错误！");
+                e.printStackTrace();
             }
         }
 
@@ -106,10 +109,12 @@ public class OutputDao {
             throw new RuntimeException("文件输出错误！");
         } finally {
             try {
-                bw.flush();
-                bw.close();
+                if (bw != null) {
+                    bw.flush();
+                    bw.close();
+                }
             } catch (IOException e) {
-                throw new RuntimeException("输出流关闭错误！");
+                e.printStackTrace();
             }
         }
         System.out.println(sb1.toString());

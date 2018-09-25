@@ -16,8 +16,6 @@ public class QuestionUtil {
     public static String charListToString(List<Char> charList, List<Parentheses> parenthesesList) {
         List<Number> numberList = fatherListToSonList(charList, Number.class);
         List<Operator> operatorList = fatherListToSonList(charList, Operator.class);
-        //对list按照id进行排序
-        numberList.sort(Comparator.comparing(Number::getNId));
         StringBuilder result = new StringBuilder();
         for (Number number: numberList) {
             StringBuilder s = new StringBuilder(number.getOutput());
@@ -106,7 +104,7 @@ public class QuestionUtil {
      * @param endId
      * @return
      */
-    public static <T extends Char> List<T> findCharById(List<T> charList, int startId, int endId) {
+    private static <T extends Char> List<T> findCharById(List<T> charList, int startId, int endId) {
         List<T> result = new LinkedList<>();
         for (T c: charList) {
             if (c.getId() >= startId && c.getId() <= endId) {
@@ -126,12 +124,8 @@ public class QuestionUtil {
         if (operatorList.size() == 1) {
             return operatorList;
         }
-        List<Operator> originList = new ArrayList<>();
-        originList.addAll(operatorList);
-        List<Parentheses> parenthesesList = new ArrayList<>();
-        if (pList != null) {
-            parenthesesList.addAll(pList);
-        }
+        List<Operator> originList = new LinkedList<>(operatorList);
+        List<Parentheses> parenthesesList = new LinkedList<>(pList);
         List<Operator> calculateList = new LinkedList<>();
         //如果有括号，找到最优先的括号
         Parentheses priorityParentheses;

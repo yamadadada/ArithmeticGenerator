@@ -1,6 +1,5 @@
 package com.example.demo.service;
 
-import com.example.demo.enums.OperatorEnum;
 import com.example.demo.pojo.*;
 import com.example.demo.pojo.Number;
 import com.example.demo.utils.MathUtil;
@@ -75,8 +74,8 @@ public class RepeatService {
         if (!(operatorList1.size() == operatorList2.size())) {
             return false;
         }
-        List<String> stringList1 = operatorList1.stream().map(e -> e.getOperator()).collect(Collectors.toList());
-        List<String> stringList2 = operatorList2.stream().map(e -> e.getOperator()).collect(Collectors.toList());
+        List<String> stringList1 = operatorList1.stream().map(Operator::getOperator).collect(Collectors.toList());
+        List<String> stringList2 = operatorList2.stream().map(Operator::getOperator).collect(Collectors.toList());
         return QuestionUtil.isListEqual(stringList1, stringList2);
     }
 }

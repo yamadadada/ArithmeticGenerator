@@ -1,6 +1,5 @@
 package com.example.demo.utils;
 
-import com.example.demo.enums.NumberTypeEnum;
 import com.example.demo.enums.OperatorEnum;
 import com.example.demo.pojo.CalculateFraction;
 import com.example.demo.pojo.Number;
