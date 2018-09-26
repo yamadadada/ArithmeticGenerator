@@ -6,29 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd3d6383-0a75-4885-babb-66557bae423a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Answers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArithmeticGenerator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ArithmeticGenerator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Grade.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Grade.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ArithmeticGenerator_jar/Answers.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ArithmeticGenerator_jar/ArithmeticGenerator.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ArithmeticGenerator_jar/ArithmeticGenerator.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ArithmeticGenerator_jar/Exercises.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Number.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/RepeatService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/utils/QuestionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/pojo/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/RepeatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/RepeatService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/AppTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="fd3d6383-0a75-4885-babb-66557bae423a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
@@ -78,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -156,6 +134,17 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -533,7 +522,7 @@
       <workItem from="1537888469291" duration="3649000" />
       <workItem from="1537944601949" duration="4048000" />
       <workItem from="1537962854018" duration="1432000" />
-      <workItem from="1537971049088" duration="10825000" />
+      <workItem from="1537971049088" duration="11234000" />
     </task>
     <servers />
   </component>
@@ -570,7 +559,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133815000" />
+    <option name="totallyTimeSpent" value="134224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,7 +572,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293944" />
@@ -592,19 +580,19 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" sideWeight="0.49926144" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293944" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28508124" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.50073856" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36461127" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26675603" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49778435" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -626,6 +614,10 @@
     <breakpoint-manager>
       <option name="time" value="68" />
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/App.java">
@@ -987,6 +979,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -994,13 +993,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
