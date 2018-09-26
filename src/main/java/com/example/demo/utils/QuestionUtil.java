@@ -61,7 +61,7 @@ public class QuestionUtil {
      * @return
      */
     public static <T, V extends T> List<V> fatherListToSonList(List<T> fatherList, Class V) {
-        List<V> sonList = new LinkedList<>();
+        List<V> sonList = new ArrayList<>();
         for (T t: fatherList) {
             if (t.getClass().equals(V)) {
                 sonList.add((V) t);
@@ -105,7 +105,7 @@ public class QuestionUtil {
      * @return
      */
     private static <T extends Char> List<T> findCharById(List<T> charList, int startId, int endId) {
-        List<T> result = new LinkedList<>();
+        List<T> result = new ArrayList<>();
         for (T c: charList) {
             if (c.getId() >= startId && c.getId() <= endId) {
                 result.add(c);

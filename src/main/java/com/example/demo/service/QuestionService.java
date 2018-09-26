@@ -7,6 +7,7 @@ import com.example.demo.pojo.Number;
 import com.example.demo.utils.MathUtil;
 import com.example.demo.utils.QuestionUtil;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -22,8 +23,8 @@ public class QuestionService {
         Question question = new Question();
         Random r = new Random();
         int operatorNum = r.nextInt(3) + 1;
-        List<Operator> operatorList = new LinkedList<>();
-        List<Char> charList = new LinkedList<>();
+        List<Operator> operatorList = new ArrayList<>();
+        List<Char> charList = new ArrayList<>();
         for (int i = 0; i < operatorNum; i++) {
             //生成运算符
             OperatorEnum operatorEnum = OperatorEnum.values()[r.nextInt(4)];
@@ -37,13 +38,13 @@ public class QuestionService {
         //生成最后一个数字并加入链表
         charList.add(createNumber(maxRange, operatorNum + 1));
         //生成括号
-        List<Parentheses> parenthesesList = new LinkedList<>();
+        List<Parentheses> parenthesesList = new ArrayList<>();
         getParenthesesList(1, operatorList.size() + 1, parenthesesList);
         //构造运算符优先处理链
         List<Operator> buildList = QuestionUtil.buildLink(operatorList, parenthesesList);
+        question.setBuildList(buildList);
         //计算结果
-        List<Char> tempList = new LinkedList<>();
-        tempList.addAll(charList);
+        List<Char> tempList = new LinkedList<>(charList);
         for(int i = 0; i < buildList.size(); i++) {
             Operator o = buildList.get(i);
             int temp = tempList.indexOf(o);

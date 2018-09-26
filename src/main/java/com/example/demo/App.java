@@ -7,6 +7,7 @@ import com.example.demo.service.QuestionService;
 import com.example.demo.service.RepeatService;
 import com.example.demo.utils.QuestionUtil;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -31,7 +32,7 @@ public class App {
         if (flag == CREATE) {
             QuestionService questionService = new QuestionService();
             RepeatService repeatService = new RepeatService();
-            List<Question> questionList = new LinkedList<>();
+            List<Question> questionList = new ArrayList<>();
             for (int i = 1; i <= questionNumber; i++) {
                 Question question = questionService.getQuestion(maxRange);
                 //检查重复题目
@@ -40,9 +41,7 @@ public class App {
                 }
                 question.setId(i);
                 questionList.add(question);
-            }
-            for (Question q: questionList) {
-                System.out.println("[" + q.getId() + "]" + QuestionUtil.charListToString(q.getCharList(), q.getParenthesesList()));
+                System.out.println("[" + question.getId() + "]" + QuestionUtil.charListToString(question.getCharList(), question.getParenthesesList()));
             }
             OutputDao outputDao = new OutputDao();
             outputDao.toExercises(questionList);
@@ -65,10 +64,12 @@ public class App {
                     outputDao.correct(args[1], args[3]);
                     return CHECK;
                 } else {
-                    throw new RuntimeException("参数不正确：" + args[1] + ", " + args[3]);
+                    System.out.println("参数不正确：" + args[1] + ", " + args[3]);
+                    System.exit(-1);
                 }
             } else {
-                throw new RuntimeException("参数格式不正确！");
+                System.out.println("参数格式不正确！");
+                System.exit(-1);
             }
         }
         for (int i = 0; i < args.length; i++) {
@@ -83,18 +84,22 @@ public class App {
                             maxRange = Integer.parseInt(args[i]);
                         }
                     } catch (NumberFormatException e) {
-                        throw new RuntimeException("参数不是正整数：" + args[i]);
+                        System.out.println("参数不是正整数：" + args[i]);
+                        System.exit(-1);
                     }
                 } else {
-                    throw new RuntimeException("参数不是正整数或参数不能为空：" + args[i]);
+                    System.out.println("参数不是正整数或参数不能为空：" + args[i]);
+                    System.exit(-1);
                 }
             } else {
-                throw new RuntimeException("参数不正确：" + args[i]);
+                System.out.println("参数不正确：" + args[i]);
+                System.exit(-1);
             }
         }
         //验证maxRange是否有输入
         if (maxRange == 0) {
-            throw new RuntimeException("-r参数不能为空！");
+            System.out.println("-r参数不能为空！");
+            System.exit(-1);
         }
         return CREATE;
     }

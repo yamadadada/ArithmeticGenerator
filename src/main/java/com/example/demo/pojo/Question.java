@@ -16,6 +16,9 @@ public class Question {
     //括号集合
     private List<Parentheses> parenthesesList;
 
+    //运算符优先处理链表
+    private List<Operator> buildList;
+
     //答案
     private String result;
 }

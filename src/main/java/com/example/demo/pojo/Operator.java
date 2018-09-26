@@ -20,4 +20,9 @@ public class Operator implements Char{
     public int getId() {
         return oid;
     }
+
+    @Override
+    public String toString() {
+        return " " + operator + " ";
+    }
 }

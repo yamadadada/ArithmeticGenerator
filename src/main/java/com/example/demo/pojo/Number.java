@@ -60,4 +60,9 @@ public class Number implements Char{
     public int getId() {
         return nId;
     }
+
+    @Override
+    public String toString() {
+        return getOutput();
+    }
 }

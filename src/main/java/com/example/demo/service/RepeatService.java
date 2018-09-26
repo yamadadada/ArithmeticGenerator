@@ -7,7 +7,6 @@ import com.example.demo.utils.QuestionUtil;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class RepeatService {
 
@@ -21,26 +20,21 @@ public class RepeatService {
         for (Question origin: questionList) {
             //先检查题目答案是否相同再进行下一步
             if (origin.getResult().equals(question.getResult())) {
-                //检查运算符的个数和种类是否相同
-                if (isOperatorRepeat(QuestionUtil.fatherListToSonList(origin.getCharList(), Operator.class), QuestionUtil.fatherListToSonList(question.getCharList(), Operator.class))) {
-                    //只有一个运算符说明重复
-                    if (QuestionUtil.fatherListToSonList(question.getCharList(), Operator.class).size() == 1) {
-                        return true;
-                    }
-                    //构建运算符优先链表
-                    List<Operator> o1 = QuestionUtil.buildLink(QuestionUtil.fatherListToSonList(origin.getCharList(), Operator.class), origin.getParenthesesList());
-                    List<Operator> o2 = QuestionUtil.buildLink(QuestionUtil.fatherListToSonList(question.getCharList(), Operator.class), question.getParenthesesList());
-                    //比较运算符优先链表是否相同
+                //只有一个运算符说明重复
+                if (question.getCharList().size() == 3 && !question.getResult().equals("0")) {
+                    return true;
+                }
+                List<Operator> o1 = origin.getBuildList();
+                List<Operator> o2 = question.getBuildList();
+                if (o1.size() == o2.size()) {
                     for (int i = 0; i < o1.size(); i++) {
                         if (!o1.get(i).getOperator().equals(o2.get(i).getOperator())) {
                             return false;
                         }
                     }
                     //根据优先链表逐一比较
-                    List<Char> charList1 = new LinkedList<>();
-                    List<Char> charList2 = new LinkedList<>();
-                    charList1.addAll(origin.getCharList());
-                    charList2.addAll(question.getCharList());
+                    List<Char> charList1 = new LinkedList<>(origin.getCharList());
+                    List<Char> charList2 = new LinkedList<>(question.getCharList());
                     List<String> stringList1 = new LinkedList<>();
                     List<String> stringList2 = new LinkedList<>();
                     for (int i = 0; i < o1.size() - 1; i ++) {
@@ -68,14 +62,5 @@ public class RepeatService {
             }
         }
         return false;
-    }
-
-    public boolean isOperatorRepeat(List<Operator> operatorList1, List<Operator> operatorList2) {
-        if (!(operatorList1.size() == operatorList2.size())) {
-            return false;
-        }
-        List<String> stringList1 = operatorList1.stream().map(Operator::getOperator).collect(Collectors.toList());
-        List<String> stringList2 = operatorList2.stream().map(Operator::getOperator).collect(Collectors.toList());
-        return QuestionUtil.isListEqual(stringList1, stringList2);
     }
 }
